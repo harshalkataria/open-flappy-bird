@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Documentation files (README, CONTRIBUTING, LICENSE)
 -   GitHub templates for issues and pull requests
 -   Imported Bird and Pipe images from [The Unity Tutorial For Complete Beginners](https://youtu.be/XtQMytORBmM?si=PTgImI5QEYLikgIR)
+-   Keyboard input provider
+-   Added a script to handle keyboard input
+-   Added a script to handle bird movement
 
 ## [0.1.0] - 2025-04-30
 
