@@ -40,24 +40,3 @@ public class Bird : MonoBehaviour
         birdRigidbody.linearVelocity = Vector2.up * flapStrength;
     }
 }
-
-// Interface for input abstraction
-public interface IInputProvider
-{
-    event System.Action OnFlapAction;
-    void CheckInput();
-}
-
-// Concrete implementation for keyboard input
-public class KeyboardInputProvider : IInputProvider
-{
-    public event System.Action OnFlapAction;
-    
-    public void CheckInput()
-    {
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            OnFlapAction?.Invoke();
-        }
-    }
-}
